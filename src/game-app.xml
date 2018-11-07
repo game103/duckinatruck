@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<application xmlns="http://ns.adobe.com/air/application/27.0">
+  <id>net.game103.duckinatruck</id>
+  <versionNumber>1.1.1</versionNumber>
+  <filename>Duck Truck</filename>
+  <description/>
+  <!-- To localize the description, use the following format for the description element.<description><text xml:lang="en">English App description goes here</text><text xml:lang="fr">French App description goes here</text><text xml:lang="ja">Japanese App description goes here</text></description>-->
+  <name>Duck Truck</name>
+  <!-- To localize the name, use the following format for the name element.<name><text xml:lang="en">English App name goes here</text><text xml:lang="fr">French App name goes here</text><text xml:lang="ja">Japanese App name goes here</text></name>-->
+  <copyright/>
+  <initialWindow>
+    <content>game.swf</content>
+    <systemChrome>standard</systemChrome>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <fullScreen>true</fullScreen>
+    <aspectRatio>portrait</aspectRatio>
+    <renderMode>gpu</renderMode>
+    <autoOrients>true</autoOrients></initialWindow>
+  <icon>
+    <image48x48>Pics/icons/48.png</image48x48>
+    <image72x72>Pics/icons/72.png</image72x72>
+    <image512x512>Pics/icons/512.png</image512x512>
+    <image114x114>Pics/icons/114.png</image114x114>
+    <image57x57>Pics/icons/57.png</image57x57>
+    <image29x29>Pics/icons/29.png</image29x29>
+  </icon>
+  <customUpdateUI>false</customUpdateUI>
+  <allowBrowserInvocation>false</allowBrowserInvocation>
+  <iPhone>
+    <InfoAdditions>
+      <![CDATA[<key>UIDeviceFamily</key><array><string>1</string><string>2</string></array>]]>
+    </InfoAdditions>
+    <requestedDisplayResolution>high</requestedDisplayResolution>
+  </iPhone>
+  <android>
+    <manifestAdditions>
+      <![CDATA[<manifest>
+<uses-permission android:name="android.permission.INTERNET"/>
+</manifest>]]>
+    </manifestAdditions>
+  </android>
+  <extensions>
+    <extensionID>com.milkmangames.extensions.StoreKit</extensionID>
+    <extensionID>com.milkmangames.extensions.GameCenter</extensionID>
+  </extensions>
+</application>
